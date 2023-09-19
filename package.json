@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "jest": "^29.6.4"
+  },
+  "name": "blackjack",
+  "version": "1.0.0",
+  "description": "Blackjack! Get as close to 21 as possible, or the house wins.",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC"
+}
