@@ -1,4 +1,4 @@
-const { playerHand, cardPair } = require('../src/playerDeck');
+const { playerHand, cardPair, handValue } = require('../src/playerDeck');
 const { randomFace, cardNumber, drawCard, } = require('../src/cards');
 
 describe("Player deck additions", () => {
@@ -19,4 +19,11 @@ describe("Player deck additions", () => {
       });
     });
 
+    xit('should return the total of the players hand', () => {
+        jest.spyOn(global.Math, 'random').mockReturnValue(0.5); 
+        
+        expect(handValue()).toEqual(cardPair());
+
+        jest.spyOn(global.Math, 'random').mockRestore();
+    });
 
