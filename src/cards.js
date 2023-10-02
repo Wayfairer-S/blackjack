@@ -5,15 +5,20 @@ function cardNumber() {
   return cardNumber;
 }
 
+function randomSuit() {
+  const suit = ["King" , "Queen", "Jack", "Ace"];
+
+}
+
 function randomFace() {
   const faces = ["of Clubs.", "of Spades.", "of Hearts.", "of Diamonds."];
-  
 
   const randomIndex = Math.floor(Math.random() * faces.length);
   const randomFace = faces[randomIndex];
 
   return randomFace;
 }
+
 
 function drawCard() {
   const newCard = cardNumber() + ' ' + randomFace();
@@ -22,9 +27,11 @@ function drawCard() {
 }
 
 
-
 module.exports = {
   cardNumber: cardNumber,
   randomFace: randomFace,
-  drawCard: drawCard
+  drawCard: drawCard,
+  randomSuit: randomSuit,
 };
+
+

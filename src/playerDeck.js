@@ -2,9 +2,9 @@ const cards = require('../src/cards')
 const { drawCard } =  cards;
 
 function playerHand() {
-    const hand = []; // Use a different name for the variable
+    const hand = []; 
 
-    return hand; // Return the variable, not a function call
+    return hand; 
 }
 
 function cardPair() {
@@ -14,5 +14,6 @@ function cardPair() {
     return cardPair;
 }
 
+console.log(drawCard());
 
 module.exports = { playerHand, cardPair, };
